@@ -1,3 +1,14 @@
+/* Commin styles */
+
+.body-block {
+    border: 1px solid #555555;
+    margin: 40px 30px;
+    padding: 40px 30px;
+}
+
+
+/* Special styles */
+
 * {
     box-sizing: border-box;
 }
@@ -53,7 +64,7 @@ a {
 }
 
 .main {
-    padding: 40px 30px;
+
 }
 
 img.icon {
@@ -67,14 +78,19 @@ h1 {
 
 p {
     font-size: 14pt;
-    padding: 20px;
-    border: 1px solid #555555;
-    margin: 20px 0;
+}
+
+.contacts {
+
 }
 
 .footer {
-    padding: 0 30px 30px;
+    border: none;
+    border-top: 1px solid #555555;
+    padding: 30px;
     color: #cccccc;
+    background-color: #303030;
+
 }
 
 @media (max-width: 640px) {
