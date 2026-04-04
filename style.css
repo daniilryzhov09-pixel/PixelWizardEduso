@@ -87,6 +87,12 @@ img.icon {
     width: 60px;
 }
 
+.banner {
+    width: 150px;
+    float: right;
+    margin: -40px -30px 0px 0px;
+}
+
 h1 {
     margin: 16px 0;
     font-size: 42px;
