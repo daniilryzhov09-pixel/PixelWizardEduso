@@ -70,8 +70,12 @@ a {
 }
 
 .image {
-    width: 90%;
-    margin: 5% 5%;
+    width: 45%;
+    margin: 2% 2.5% 5% 2.5%;
+}
+
+.main .image {
+    float: left;
 }
 
 .button {
@@ -89,6 +93,13 @@ h1 {
 
 p {
     font-size: 14pt;
+    clear: both;
+}
+
+.about {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contacts {
