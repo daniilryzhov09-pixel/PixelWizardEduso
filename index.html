@@ -25,8 +25,8 @@
         </p>
         <p></p>
         <p>You have two goals: survive the fire… and stop it before the entire world turns to ash.</p>
-        <img src="GameSS2.jpg" class="image" alt="Game screenshot" />
-        <img src="GameSS3.jpg" class="image" alt="Game screenshot" />
+        <img src="GameSS2.jpg" class="image" alt="Game screenshot" onclick="openModal(this)" />
+        <img src="GameSS3.jpg" class="image" alt="Game screenshot" onclick="openModal(this)" />
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -53,5 +53,34 @@
             <li>element2</li>
         </ul-->
     </div>
+
+    <div class="modal" id="image-modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <button class="modal-close" type="button" onclick="closeModal()">Exit</button>
+            <img src="" class="modal-image" alt="Opened image" />
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById("image-modal");
+        const modalImage = modal.querySelector(".modal-image");
+
+        function openModal(image) {
+            modalImage.src = image.src;
+            modalImage.alt = image.alt;
+            modal.classList.add("open");
+            document.body.classList.add("modal-open");
+        }
+
+        function closeModal(event) {
+            if (event && event.target !== modal) {
+                return;
+            }
+
+            modal.classList.remove("open");
+            document.body.classList.remove("modal-open");
+            modalImage.src = "";
+        }
+    </script>
 </body>
 </html>
