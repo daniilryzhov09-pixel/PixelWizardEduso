@@ -67,6 +67,14 @@ a {
 
 }
 
+.image {
+    width: 100%
+}
+
+.button {
+    width: 200px;
+}
+
 img.icon {
     width: 60px;
 }
