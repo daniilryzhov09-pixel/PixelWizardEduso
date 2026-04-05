@@ -70,8 +70,8 @@ a {
 }
 
 .image {
-    width: 45%;
-    margin: 2% 2.5% 5% 2.5%;
+    width: 44%;
+    margin: 2% 2.5% 2% 2.5%;
     cursor: pointer;
 }
 
@@ -81,6 +81,7 @@ a {
 
 .button {
     width: 200px;
+    margin: 4% 0% 0% 0%;
 }
 
 img.icon {
@@ -101,18 +102,6 @@ h1 {
 p {
     font-size: 14pt;
     clear: both;
-}
-
-.about {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contacts {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .footer {
